@@ -67,7 +67,7 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden w-full;
   }
   a {
     @apply inline-block border-b-2 border-white/25 transition-colors duration-200 hover:border-white hover:duration-0;

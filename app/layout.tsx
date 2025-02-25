@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Inter, Inter_Tight } from 'next/font/google'
+import ResizableSidebar from '@/ui/resizable-sidebar'
+import Sidebar from '@/ui/sidebar'
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ['latin'] })
@@ -18,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${inter_tight.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} ${inter_tight.className} antialiased`}>
+        <ResizableSidebar />
+        {children}
+      </body>
     </html>
   )
 }
