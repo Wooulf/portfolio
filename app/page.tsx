@@ -23,8 +23,12 @@ export default function Page() {
       <p>Ce site propose les sections suivantes :</p>
       <ul className="list-disc pl-4">
         <li>
-          <Link href="/profile">Profil&nbsp;</Link>: Aperçu de la carrière,{' '}
-          <Link href="/profile/cv">curriculum&nbsp;vitae</Link>, projets
+          <Link href="/profile">Profil&nbsp;</Link>: Aperçu de la carrière, curriculum&nbsp;vitae{' '}
+          <Link href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+            (pdf&nbsp;
+            <ExternalLink className="relative top-[-1.5px] w-4 h-4 text-gray-500 inline-block" />)
+          </Link>
+          , projets
         </li>
         <li>
           <Link href="/works">Travaux&nbsp;</Link>: Mes activités, projets et{' '}

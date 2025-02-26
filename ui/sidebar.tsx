@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Sidebar() {
   return (
-    <div className="relative flex flex-col min-h-screen justify-center items-center bg-[url(/background.png)] bg-center bg-cover text-center [&_a]:sidebar-links">
+    <div className="fixed flex flex-col min-h-screen justify-center items-center bg-[url(/background.png)] bg-center bg-cover text-center [&_a]:sidebar-links">
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       <div className="[&>*]:flex [&>*]:flex-col [&>*]:items-center [&>*:not(:first-child)]:relative text-[#F5F5F5] font-bold font-interTight -translate-y-16">
         <div className="mb-4">

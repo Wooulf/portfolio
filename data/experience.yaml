@@ -1,0 +1,33 @@
+experiences:
+  - date: "2022 - 2024"
+    company:
+      name: "Crédit Mutuel Arkéa"
+      url: "https://fr.wikipedia.org/wiki/Cr%C3%A9dit_mutuel_Ark%C3%A9a"
+      address: "1 rue Louis Lichou, 29480 Le Relecq-Kerhuon"
+    title: "Fullstack Developer / DevOps"
+    tasks:
+      - "Responsable de la migration d’une application en Java GWT vers un backend en Java Springboot, alliant gestion de projet et sa réalisation."
+      - "Développement de différents outils à travers des scripts..."
+      - "Migration d’un front end Java GWT en Vue.js."
+      - "Migration d’un ensemble de tests des applis de notre service..."
+      - "Création d’images docker, déploiement automatisé..."
+  - date: "2021 - 2022"
+    company:
+      name: "Ergoss Logiciels"
+      url: "https://ergoss.net/fr/"
+      address: "3 Rue des Charrons, 31700 Blagnac"
+    title: "Développeur backend"
+    tasks:
+      - "Développements sur une API monolithique en C#"
+      - "Travail en équipe avec Git, Azure DevOps et Jira."
+  - date: "2021 - 2022"
+    company:
+      name: "GIE 246"
+      url: "https://ergoss.net/fr/"
+      address: "15 rue Claude Boucher, 33000 Bordeaux"
+    title: "Network, development, security"
+    tasks:
+      - "Recherches pour la mise en place d’un bastion d’authentification."
+      - "Veille technologique sur des gestionnaires de mots de passe."
+      - "Script de rotation des mots de passe pour les switchs."
+      - "Migration dans le cloud de mots de passe et d’un logiciel de ticketing."
