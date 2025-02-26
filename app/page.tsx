@@ -1,9 +1,9 @@
 import { ExternalLink } from 'lucide-react'
 import Link from 'next/link'
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="max-w-3xl ml-20 mr-11 pl-4 pt-36 pr-4 pb-44">
+    <article>
       <header>
         <h1 className="text-3xl inline-block mb-4">Corentin Boucard</h1>
         <hr />
@@ -30,13 +30,13 @@ export default function Home() {
           <Link href="/works">Travaux&nbsp;</Link>: Mes activités, projets et{' '}
           <Link href="/">
             demo&nbsp;live&nbsp;
-            <ExternalLink className="w-4 h-4 text-gray-500 inline-block" />
+            <ExternalLink className="relative top-[-1.5px] w-4 h-4 text-gray-500 inline-block" />
           </Link>
         </li>
         <li>
           <Link href="/certifications">Diplômes&nbsp;</Link>: Description de mes diplômes
         </li>
       </ul>
-    </main>
+    </article>
   )
 }

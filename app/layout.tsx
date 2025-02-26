@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter, Inter_Tight } from 'next/font/google'
 import ResizableSidebar from '@/ui/resizable-sidebar'
 import Sidebar from '@/ui/sidebar'
+import Breadcrumb from '../ui/breadcrumb'
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ['latin'] })
@@ -21,10 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${inter_tight.className} antialiased flex`}>
-        <div className="max-w-52 w-4/12">
+        <div className="absolute max-w-52 w-4/12">
           <Sidebar />
         </div>
-        {children}
+        <main className="max-w-3xl ml-52 mr-11 pl-4 pt-36 pr-4 pb-44">
+          <Breadcrumb />
+          {children}
+        </main>
       </body>
     </html>
   )

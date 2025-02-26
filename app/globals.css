@@ -77,7 +77,7 @@ body {
   }
 
   a {
-    @apply inline-block border-b-2 border-[#680C2CEE]/25 transition-colors duration-200 hover:border-[#680C2CEE] hover:duration-0;
+    @apply inline-block font-semibold border-b-2 border-[#680C2CEE]/25 transition-colors duration-200 hover:border-[#680C2CEE] hover:duration-0;
   }
 
   .text-primary {
@@ -90,5 +90,11 @@ body {
 
   hr {
     @apply inline-block pb-3 w-full mb-1;
+  }
+
+  @variants {
+    .no-tailwindcss {
+      all: unset;
+    }
   }
 }
