@@ -20,8 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${inter_tight.className} antialiased`}>
-        <ResizableSidebar />
+      <body className={`${inter.className} ${inter_tight.className} antialiased flex`}>
+        <div className="max-w-52 w-4/12">
+          <Sidebar />
+        </div>
         {children}
       </body>
     </html>

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Sidebar() {
   return (
-    <div className="flex flex-col min-h-screen justify-center items-center bg-[url(/background.png)] bg-center bg-cover text-center">
+    <div className="relative flex flex-col min-h-screen justify-center items-center bg-[url(/background.png)] bg-center bg-cover text-center [&_a]:sidebar-links">
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       <div className="[&>*]:flex [&>*]:flex-col [&>*]:items-center [&>*:not(:first-child)]:relative text-[#F5F5F5] font-bold font-interTight -translate-y-16">
         <div className="mb-4">
@@ -16,9 +16,9 @@ export default function Sidebar() {
             className="rounded-full mb-5 brightness-[0.82]"
           ></Image>
           <Link href="/" className="pb-1 mb-1.5 text-2xl">
-            <h1>Corentin Boucard</h1>
+            <h1 className="text-[#F5F5F5]">Corentin Boucard</h1>
           </Link>
-          <p className="opacity-75 font-normal">
+          <p className="opacity-75 font-normal text-[#c3c3c3]">
             Backend Developer –<wbr /> DevOps Newcomer
           </p>
         </div>

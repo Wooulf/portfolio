@@ -33,6 +33,9 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    --fbc-primary-text: #15141A;
+    --fbc-secondary-text: #323232;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -69,7 +72,23 @@ body {
   body {
     @apply bg-background text-foreground overflow-x-hidden w-full;
   }
-  a {
+  .sidebar-links {
     @apply inline-block border-b-2 border-white/25 transition-colors duration-200 hover:border-white hover:duration-0;
+  }
+
+  a {
+    @apply inline-block border-b-2 border-[#680C2CEE]/25 transition-colors duration-200 hover:border-[#680C2CEE] hover:duration-0;
+  }
+
+  .text-primary {
+    color: var(--fbc-primary-text);
+  }
+
+  .text-secondary {
+    color: var(--fbc-secondary-text) !important;
+  }
+
+  hr {
+    @apply inline-block pb-3 w-full mb-1;
   }
 }
